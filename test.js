@@ -1,7 +1,6 @@
 const sunTheme = {
     images: {
-        theme_frame: "img/imam-ali-theme.png",
-        float: "left"
+        theme_frame: "img/imam-ali-theme.png"
     },
     colors: {
         frame: "#ffffff",
