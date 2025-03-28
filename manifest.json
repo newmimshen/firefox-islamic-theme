@@ -3,12 +3,12 @@
     "name": "test",
     "version": "1.0",
 
-    "description": "Adds a red border to all webpages matching mozilla.org.",
-
-    "content_scripts": [
-    {
-        "matches": ["*://*.mozilla.org/*"],
-        "js": ["test.js"]
-    }
-]
+    "description": "...",
+    "background": {
+        "scripts": ["test.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "theme"
+    ]
 }
