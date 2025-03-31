@@ -11,10 +11,8 @@ let sunTheme = {
         additional_backgrounds_alignment:['left top'],
     }
     };
-//browser.theme.update(sunTheme); // it is a required api for firefox theme
-//sunTheme['images']['additional_backgrounds'] = 'img/selected/imam-ali';
-//console.log(sunTheme)
-const weekDays = ['yekshanbe', 'doshanbe', 'seshanbe','chaharshanbe', 'panjshanbe', 'jome', 'shanbe'];
+
+// const weekDays = ['yekshanbe', 'doshanbe', 'seshanbe','chaharshanbe', 'panjshanbe', 'jome', 'shanbe'];
 const sunPersons = {
     nabi: ['/img/selected/payambar/1.png', '/img/selected/payambar/2.png'],
     ali: ['/img/selected/imam-ali/1.png', '/img/selected/imam-ali/2.png', '/img/selected/imam-ali/3.png'],
@@ -32,22 +30,45 @@ const sunPersons = {
 };
 const persons = ['nabi', 'ali', 'hasan', 'hussain', 'sajjad', 'bagir', 'sadigh', 'kazim', 'reza', 'javad', 'hadi', 'askari' ,'hojjat'];
 let time = new Date().getDay();
-//console.log(time + ": Today is " + weekDays[time]);
-//console.log(sunPersons.nabi[0]);
-//console.log(sunPersons.ali[Math.floor(Math.random() * 3)])
-//console.log(persons [Math.floor(Math.random() * 2)+2]);
 p = persons [Math.floor(Math.random() * 2)+2];
-console.log(sunPersons[p][Math.floor(Math.random() * 2)]);
+function chooseLengthOfArray (nameOfSun){ //get length
+    return nameOfSun.length;
+}
+function chooseRandomItem (array,length,minimum){ // get person/image
+    return array[Math.floor(Math.random() * length) + minimum];
+}
 
-//console.log(sunPersons [sunPersons[Math.floor(Math.random() * 2)+2]][Math.floor(Math.random() * 3)]);
 function chooseSun () {
     switch(time){
         case 0:
-            sunTheme.images.additional_backgrounds = sunPersons.ali[Math.floor(Math.random() * 3)];
+            sunTheme.images.additional_backgrounds = chooseRandomItem(sunPersons.ali,chooseLengthOfArray(sunPersons.ali),0);
             break;
         case 1:
-            p = sunPersons[Math.floor(Math.random() * 2)+2];
-            sunTheme.images.additional_backgrounds = sunPersons[p][Math.floor(Math.random() * 2)];
+            p = chooseRandomItem(persons,2,2);
+            sunTheme.images.additional_backgrounds = sunPersons[p][Math.floor(Math.random() * chooseLengthOfArray(sunPersons[p]))];
+            break;
+        case 2:
+            p = chooseRandomItem(persons,3,4);
+            sunTheme.images.additional_backgrounds = sunPersons[p][Math.floor(Math.random() * chooseLengthOfArray(sunPersons[p]))];
+            break;
+        case 3:
+            p = chooseRandomItem(persons,4,7);
+            sunTheme.images.additional_backgrounds = sunPersons[p][Math.floor(Math.random() * chooseLengthOfArray(sunPersons[p]))];
+            break;
+        case 4:
+            sunTheme.images.additional_backgrounds = sunPersons.askari[Math.floor(Math.random() * chooseLengthOfArray(sunPersons.askari))];
+            break;
+        case 5:
+            sunTheme.images.additional_backgrounds = sunPersons.hojjat[Math.floor(Math.random() * chooseLengthOfArray(sunPersons.hojjat))];
+            break;
+        case 6:
+            sunTheme.images.additional_backgrounds = sunPersons.nabi[Math.floor(Math.random() * chooseLengthOfArray(sunPersons.nabi))];
             break;
     }
 }
+chooseSun();
+//console.log(sunTheme.images.additional_backgrounds);
+//console.log(Math.floor(Math.random() * 2));
+//console.log(time);
+//console.log(chooseRandomItem(persons,4,7));
+//console.log(persons);
