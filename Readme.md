@@ -51,7 +51,7 @@ function chooseLengthOfArray (nameOfSun){ //get length
 ```javascript
 function chooseRandomItem (array,length,minimum){ // get person/image
     return array[Math.floor(Math.random() * length) + minimum]; 
-    // length represents to number of persons that fits in a day, for example wednesday have 4 persons, so length = 4, in this example minimum should be 7, because 7 first persons were used in previously days.
+    // length represents to number of persons that fits in a day, for example wednesday has 4 persons, so length = 4, in this example minimum should be 7, because 7 first persons were used in previously days.
     // if our random number be 3 {0-3} + 7 = 10, 10th person in persons array is Imam Hadi
 }
 ```
