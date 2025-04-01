@@ -95,6 +95,7 @@ function chooseSun () {
 ## Challenges
 - First of all i couldnt use firefox console, its a bit complicated, i tried several explained ways but just one of em was a bit useful to me, and that is:    
 <a href="https://stackoverflow.com/questions/47143453/firefox-console-referenceerror-browser-is-not-defined" target="_blank">firefox console referenceerror browser is not defined</a>
+
 i just could use *add-on console* that has limited abilities.  
 therefore most of my debugging process was via my phpstorm ide.
 
