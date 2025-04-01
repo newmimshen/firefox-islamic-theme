@@ -1,14 +1,12 @@
-import { sunTheme, persons, time, sunPersons } from './variables.js';
-
-
-export function chooseLengthOfArray (nameOfSun){ //get length
+function chooseLengthOfArray (nameOfSun){ //get length
     return nameOfSun.length;
 }
-export function chooseRandomItem (array,length,minimum){ // get person/image
+
+function chooseRandomItem (array,length,minimum){ // get person/image
     return array[Math.floor(Math.random() * length) + minimum];
 }
 
-export function chooseSun () {
+function chooseSun () {
     let p;
     switch(time){
         case 0:

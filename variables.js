@@ -1,4 +1,4 @@
-export let sunTheme = {
+let sunTheme = {
     images: {
         additional_backgrounds: ["/img/imam-ali-theme.png"]
     },
@@ -12,8 +12,7 @@ export let sunTheme = {
     }
 };
 
-// const weekDays = ['yekshanbe', 'doshanbe', 'seshanbe','chaharshanbe', 'panjshanbe', 'jome', 'shanbe'];
-export const sunPersons = {
+const sunPersons = {
     nabi: ['/img/selected/payambar/1.png', '/img/selected/payambar/2.png'],
     ali: ['/img/selected/imam-ali/1.png', '/img/selected/imam-ali/2.png', '/img/selected/imam-ali/3.png'],
     hasan: ['/img/selected/imam-hasan/1.png', '/img/selected/imam-hasan/2.png'],
@@ -28,5 +27,6 @@ export const sunPersons = {
     askari: ['/img/selected/imam-askari/1.png', '/img/selected/imam-askari/2.png', '/img/selected/imam-askari/3.png', '/img/selected/imam-askari/4.png'],
     hojjat: ['/img/selected/imam-zaman/1.png', '/img/selected/imam-zaman/2.png']
 };
-export const persons = ['nabi', 'ali', 'hasan', 'hussain', 'sajjad', 'bagir', 'sadigh', 'kazim', 'reza', 'javad', 'hadi', 'askari' ,'hojjat'];
-export let time = new Date().getDay();
+
+const persons = ['nabi', 'ali', 'hasan', 'hussain', 'sajjad', 'bagir', 'sadigh', 'kazim', 'reza', 'javad', 'hadi', 'askari' ,'hojjat'];
+let time = new Date().getDay();

@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "test",
+    "name": "sun-persons",
     "version": "1.0",
 
     "description": "...",
     "background": {
-        "scripts": ["variables.js", "functions.js", "test.js"],
+        "scripts": ["variables.js", "functions.js", "sun-persons.js"],
         "persistent": false
     },
     "permissions": [
