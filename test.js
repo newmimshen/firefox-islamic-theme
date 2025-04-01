@@ -8,7 +8,7 @@ let sunTheme = {
         frame_inactive: "green",
     },
     properties: {
-        additional_backgrounds_alignment:['left top']
+        additional_backgrounds_alignment:['left center']
     }
     };
 
