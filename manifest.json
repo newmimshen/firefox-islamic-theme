@@ -5,7 +5,7 @@
 
     "description": "...",
     "background": {
-        "scripts": ["test.js"],
+        "scripts": ["variables.js", "functions.js", "test.js"],
         "persistent": false
     },
     "permissions": [
