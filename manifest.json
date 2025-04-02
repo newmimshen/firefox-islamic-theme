@@ -3,7 +3,7 @@
     "name": "sun-persons",
     "version": "1.0",
 
-    "description": "...",
+    "description": "* Saturday  : Prophet Mohammad\n* Sunday    : Imam Ali\n* Monday    : Hasanain (Imam Hasan & Imam Hussain)\n* Tuesday   : Imam Sajjad & Imam Bagir & Imam Sadiq\n* Wednesday : Imam Kazim & Imam Reza & Imam Javad & Imam Hadi\n* Thursday  : Imam Hasan Askari\n* Friday    : Hojjat ibn al-Hasan (12th Imam)",
     "background": {
         "scripts": ["variables.js", "functions.js", "sun-persons.js"],
         "persistent": false

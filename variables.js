@@ -4,8 +4,7 @@ let sunTheme = {
     },
     colors: {
         frame: "#ffffff",
-        tab_background_text: "#111",
-        frame_inactive: "green",
+        tab_background_text: "#111"
     },
     properties: {
         additional_backgrounds_alignment:['left center']
