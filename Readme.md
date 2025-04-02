@@ -1,4 +1,4 @@
-# 13 Sun theme
+# 13 Sun theme(adds-on)
 * Saturday  : Prophet Mohammad
 * Sunday    : Imam Ali
 * Monday    : Hasanain (Imam Hasan & Imam Hussain)
