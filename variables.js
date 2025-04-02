@@ -1,6 +1,6 @@
 let sunTheme = {
     images: {
-        additional_backgrounds: ["/img/imam-ali-theme.png"]
+        additional_backgrounds: [""]
     },
     colors: {
         frame: "#ffffff",

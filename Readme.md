@@ -26,8 +26,9 @@ i divided the base code to three files:
 * sun-persons.js (index)  
 
 the first two files in the list, each are around 30 lines.  
-file names include: images, folders, etc are kebab case  
-function and variable names are camel case  
+file names include: images, folders, etc are kebab case. 
+function and variable names are camel case.  
+i could create a class to handle images and persons in sunPersons array but i kept it simple and i wish i have a functional project.  
 i tried to set relevant names like:
 * persons for an array of 13 Suns:
 ```javascript
@@ -92,8 +93,10 @@ function chooseSun () {
 }
 ```
 
+That's All!
+
 ## Challenges
-- First of all i couldnt use firefox console, its a bit complicated, i tried several explained ways but just one of em was a bit useful to me, and that is:    
+- First of all i couldn't use firefox console, it's a bit complicated, i tried several explained ways but just one of em was a bit useful to me, and that is:    
 <a href="https://stackoverflow.com/questions/47143453/firefox-console-referenceerror-browser-is-not-defined" target="_blank">firefox console referenceerror browser is not defined</a>
 
 i just could use *add-on console* that has limited abilities.  
@@ -111,6 +114,7 @@ therefore most of my debugging process was via my phpstorm ide.
 2. functional base programming
 3. pure js
 4. APIs
+5. Git
 
 ## About me 
 my name is Mohammad Sharafi, I am a Proud Iranian Shi'a Muslim, i am both programmer and Photoshop editor or call it Graphic Visual Artist or whatsoever!
